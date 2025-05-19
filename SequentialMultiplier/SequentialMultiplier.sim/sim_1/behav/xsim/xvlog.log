@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Binary_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binary_Counter
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'count' is not allowed [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Binary_Counter.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/CSA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSA
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Clock_Dvider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Dvider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/HA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Push_Button_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Push_Button_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Rising_Edge_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rising_Edge_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SPM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPM
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'P_reg' is not allowed [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SPM.v:67]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/TCMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TCMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sim_1/new/SPM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

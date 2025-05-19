@@ -20,12 +20,21 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module SPM( input  [7:0] X,Y , input R,clk,   input Multiply,output reg done, output reg  [15:0] P_reg);
+module SPM( input  [7:0] X,Y , input R,clk, input Multiply, output reg done, output reg  [15:0] P_reg, output [6:0] segments, output [3:0] digit_select, input btn_left, input btn_right);
 wire [2:0] Y_count;
 wire [4:0] P_count;
  wire  en_Multiply;
 reg [7:0] Y_reg;
 
+SevenSeg display_controller(
+    .clk(clk),
+    .reset(R),
+    .product(P_reg),
+    .btn_left(btn_left),
+    .btn_right(btn_right),
+    .segments(segments),
+    .digit_select(digit_select)
+);
 Push_Button_Detector MyStart_Button(clk,R,Multiply,en_Multiply);
 Binary_Counter#(3,8) Y_Counter( clk, R,1'b1, Y_count);
    always @(posedge clk or posedge R) begin

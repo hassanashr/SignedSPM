@@ -1,0 +1,959 @@
+/*
+
+AMD Vivado v2024.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 5239630 on Fri Nov 08 22:35:27 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+Process ID (PID): 15700
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon May 19 13:40:00 EEST 2025
+Time zone: 	Eastern European Standard Time (Africa/Cairo)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1032
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	C:/Xilinx/Vivado/2024.2/tps/win64/jre21.0.1_12
+Java executable: 	C:/Xilinx/Vivado/2024.2/tps/win64/jre21.0.1_12/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	Hassan
+User home directory: C:/Users/Hassan
+User working directory: C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2024.2
+RDI_DATADIR: C:/Xilinx/Vivado/2024.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2024.2/bin
+
+Vivado preferences file: C:/Users/Hassan/AppData/Roaming/Xilinx/Vivado/2024.2/vivado.xml
+Vivado preferences directory: C:/Users/Hassan/AppData/Roaming/Xilinx/Vivado/2024.2/
+Vivado layouts directory: C:/Users/Hassan/AppData/Roaming/Xilinx/Vivado/2024.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/vivado.log
+Vivado journal file: 	C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/vivado.jou
+Engine tmp dir: 	C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/.Xil/Vivado-15700-Hassan
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+AMDRMSDKPATH: C:\Program Files\AMD\RyzenMasterSDK\
+RDI_APPROOT: C:/Xilinx/Vivado/2024.2
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent26764 "C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier\SequentialMultiplier.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/Vivado
+RDI_BINDIR: C:/Xilinx/Vivado/2024.2/bin
+RDI_BINROOT: C:/Xilinx/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/Vivado/2024.2/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: 2024.2
+RDI_INSTALLVERSION: 2024.2
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Xilinx/Vivado/2024.2/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/Vivado/2024.2/tps/win64/javafx-sdk-21.0.1
+RDI_JAVAROOT: C:/Xilinx/Vivado/2024.2/tps/win64/jre21.0.1_12
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: C:/Xilinx/Vivado/2024.2/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/Vivado/2024.2\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2024.2\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Xilinx/Vitis/2024.2/bin;C:/Xilinx/Vivado/2024.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2024.2/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3;C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\bin;C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\lib;C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier:HASSAN-Mon05-19-2025_13-39-33.16
+RDI_SHARED_DATA: C:/Xilinx/SharedData/2024.2/data
+RDI_TPS_ROOT: C:/Xilinx/Vivado/2024.2/tps/win64
+RDI_USE_JDK21: True
+RDI_VERBOSE: False
+XILINX: C:/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis/2024.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2024.2
+XILINX_SDK: C:/Xilinx/Vitis/2024.2
+XILINX_VITIS: C:/Xilinx/Vitis/2024.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2024.2
+_RDI_BINROOT: C:\Xilinx\Vivado\2024.2\bin
+_RDI_CWD: C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 790 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier\SequentialMultiplier.xpr. Version: Vivado v2024.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/youfi/SequentialMultiplier' since last save. 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 127 MB (+130894kb) [00:00:10]
+// [Engine Memory]: 746 MB (+631015kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  1945 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'. 
+// [GUI Memory]: 155 MB (+22782kb) [00:00:12]
+// [Engine Memory]: 790 MB (+6658kb) [00:00:12]
+// Project name: SequentialMultiplier; location: C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bh (Open Project Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 790 MB. GUI used memory: 74 MB. Current time: 5/19/25, 1:40:00 PM EEST
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), TCMP1 : TCMP (TCMP.v)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), TCMP1 : TCMP (TCMP.v)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), CSA6 : CSA (CSA.v)]", 6, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), CSA6 : CSA (CSA.v)]", 6, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), CSA6 : CSA (CSA.v), myHA : HA (HA.v)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), CSA6 : CSA (CSA.v), myHA : HA (HA.v)]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v), f : Clock_Dvider (Clock_Dvider.v)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v), f : Clock_Dvider (Clock_Dvider.v)]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v), A : debouncer (debouncer.v)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v), C : Rising_Edge_Detector (Rising_Edge_Detector.v)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), Y_Counter : Binary_Counter (Binary_Counter.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), Y_Counter : Binary_Counter (Binary_Counter.v)]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 77 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, C.xdc]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, C.xdc]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), TCMP1 : TCMP (TCMP.v)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), TCMP1 : TCMP (TCMP.v)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), P_Counter : Binary_Counter (Binary_Counter.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), P_Counter : Binary_Counter (Binary_Counter.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 141 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), TCMP1 : TCMP (TCMP.v)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), TCMP1 : TCMP (TCMP.v)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/utils_1/imports/synth_1/CSA.dcp with file C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.runs/synth_1/SPM.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // g (dialog0)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// Tcl Message: [Mon May 19 13:46:25 2025] Launched synth_1... Run output will be captured here: C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 66 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Synthesis Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Synthesis Completed"); // W.a (dialog1)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // aq (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'SPM_tb' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'SPM_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj SPM_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SPM_tb_behav xil_defaultlib.SPM_tb xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Built simulation snapshot SPM_tb_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "SPM_tb_behav -key {Behavioral:sim_1:Functional:SPM_tb} -tclbatch {SPM_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source SPM_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 790 MB. GUI used memory: 93 MB. Current time: 5/19/25, 1:47:43 PM EEST
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: X =   -5, Y =   -5, Product =      0 $finish called at time : 150 ns : File "C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sim_1/new/SPM_tb.v" Line 65 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'SPM_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1154.625 ; gain = 22.211 
+// 'd' command handler elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // e (Run Simulation Progress)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab((HResource) null, (HResource) null, "Protocol Instances", 1); // aa
+selectTab((HResource) null, (HResource) null, "Objects", 0); // aa
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 8); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// [GUI Memory]: 170 MB (+7569kb) [00:08:06]
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // C (RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // t (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - SPM_tb", "DesignTask.SIMULATION");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Close"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Confirm Close"); // u (dialog2)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bh (Close Progress)
+selectCodeEditor("SPM.v", 156, 257); // ae (SPM.v)
+typeControlKey((HResource) null, "SPM.v", 'c'); // ae (SPM.v)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), P_Counter : Binary_Counter (Binary_Counter.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), P_Counter : Binary_Counter (Binary_Counter.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), Y_Counter : Binary_Counter (Binary_Counter.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), Y_Counter : Binary_Counter (Binary_Counter.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), P_Counter : Binary_Counter (Binary_Counter.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), P_Counter : Binary_Counter (Binary_Counter.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), TCMP1 : TCMP (TCMP.v)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), TCMP1 : TCMP (TCMP.v)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 333 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("SPM.v", 118, 151); // ae (SPM.v)
+selectCodeEditor("SPM.v", 118, 151, false, false, false, false, true); // ae (SPM.v) - Double Click
+typeControlKey((HResource) null, "SPM.v", 'c'); // ae (SPM.v)
+typeControlKey((HResource) null, "SPM.v", 'c'); // ae (SPM.v)
+typeControlKey((HResource) null, "SPM.v", 'c'); // ae (SPM.v)
+// Elapsed time: 397 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add", "Add Sources"); // C (PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // aq (PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File...)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Top"); // ad (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // k (dialog4)
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c (dialog3)
+// Tcl Message: close [ open C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Top.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Top.v 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Define Module"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes", "Define Module"); // JButton (OptionPane.button)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // n (dialog5)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:06s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:08s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:11s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:12s
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Scroll"); // ad (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // k (dialog7)
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (dialog6)
+// Tcl Message: close [ open C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Scroll.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Scroll.v 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Define Module"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes", "Define Module"); // JButton (OptionPane.button)
+dismissDialog("Define Module"); // n (dialog8)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:23s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:24s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Scroll (Scroll.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Scroll (Scroll.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:26s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+selectCodeEditor("Scroll.v", 52, 416); // ae (Scroll.v)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:28s
+typeControlKey((HResource) null, "Scroll.v", 'v'); // ae (Scroll.v)
+selectCodeEditor("Scroll.v", 95, 448); // ae (Scroll.v)
+selectCodeEditor("Scroll.v", 95, 448, false, false, false, false, true); // ae (Scroll.v) - Double Click
+selectCodeEditor("Scroll.v", 95, 448); // ae (Scroll.v)
+selectCodeEditor("Scroll.v", 95, 448); // ae (Scroll.v)
+selectCodeEditor("Scroll.v", 105, 436); // ae (Scroll.v)
+// Elapsed time: 35 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Display"); // ad (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // k (dialog10)
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (dialog9)
+// Tcl Message: close [ open C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Display.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Display.v 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Define Module"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes", "Define Module"); // JButton (OptionPane.button)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // n (dialog11)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:23s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:25s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:27s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Display (Display.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Display (Display.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:29s
+selectCodeEditor("Display.v", 98, 386); // ae (Display.v)
+typeControlKey((HResource) null, "Display.v", 'v'); // ae (Display.v)
+selectCodeEditor("Display.v", 100, 294); // ae (Display.v)
+selectCodeEditor("Display.v", 204, 329); // ae (Display.v)
+selectCodeEditor("Display.v", 67, 361); // ae (Display.v)
+selectCodeEditor("Display.v", 162, 343, false, false, false, true, false); // ae (Display.v) - Popup Trigger
+// Elapsed time: 167 seconds
+selectCodeEditor("Display.v", 631, 413); // ae (Display.v)
+selectCodeEditor("Display.v", 630, 418); // ae (Display.v)
+selectCodeEditor("Display.v", 622, 431); // ae (Display.v)
+typeControlKey((HResource) null, "Display.v", 'c'); // ae (Display.v)
+// Elapsed time: 249 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 37 seconds
+selectCodeEditor("SPM.v", 47, 116); // ae (SPM.v)
+selectCodeEditor("SPM.v", 158, 395); // ae (SPM.v)
+typeControlKey((HResource) null, "SPM.v", 'c'); // ae (SPM.v)
+typeControlKey((HResource) null, "SPM.v", 'c'); // ae (SPM.v)
+// [GUI Memory]: 179 MB (+251kb) [00:34:40]
+// HMemoryUtils.trashcanNow. Engine heap size: 790 MB. GUI used memory: 96 MB. Current time: 5/19/25, 2:17:44 PM EEST
+// Elapsed time: 512 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Scroll (Scroll.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Scroll (Scroll.v)]", 3, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_ALL_SRCS, "Copy All Files Into Project"); // aq (PAResourceCommand.PACommandNames_IMPORT_ALL_SRCS, import_all_srcs_menu)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // f (PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // V (dialog12)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Scroll.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Scroll.v 
+// Tcl Message: file delete -force C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Scroll.v 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:17s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:19s
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Display (Display.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Display (Display.v)]", 2, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // V (dialog13)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Display.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Display.v 
+// Tcl Message: file delete -force C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Display.v 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:43s
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:45s
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Binary_to_BCD"); // ad (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // k (dialog15)
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 15 seconds
+dismissDialog("Add Sources"); // c (dialog14)
+// Tcl Message: close [ open C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Binary_to_BCD.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/Binary_to_BCD.v 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Define Module"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes", "Define Module"); // JButton (OptionPane.button)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // n (dialog16)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 40m:05s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 40m:07s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Binary_to_BCD (Binary_to_BCD.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Binary_to_BCD (Binary_to_BCD.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No such file or directory 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 40m:09s
+selectCodeEditor("Binary_to_BCD.v", 19, 380); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 19, 380, false, false, false, false, true); // ae (Binary_to_BCD.v) - Double Click
+selectCodeEditor("Binary_to_BCD.v", 19, 380); // ae (Binary_to_BCD.v)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 40m:11s
+typeControlKey((HResource) null, "Binary_to_BCD.v", 'v'); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 117, 400); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 117, 400, false, false, false, false, true); // ae (Binary_to_BCD.v) - Double Click
+selectCodeEditor("Binary_to_BCD.v", 117, 400); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 130, 279); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 130, 279, false, false, false, false, true); // ae (Binary_to_BCD.v) - Double Click
+selectCodeEditor("Binary_to_BCD.v", 130, 279); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 127, 240); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 127, 240, false, false, false, false, true); // ae (Binary_to_BCD.v) - Double Click
+selectCodeEditor("Binary_to_BCD.v", 127, 240); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 127, 225); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 127, 225, false, false, false, false, true); // ae (Binary_to_BCD.v) - Double Click
+selectCodeEditor("Binary_to_BCD.v", 127, 225); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 136, 191); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 136, 191, false, false, false, false, true); // ae (Binary_to_BCD.v) - Double Click
+selectCodeEditor("Binary_to_BCD.v", 136, 191); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 125, 158); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 124, 136); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 123, 116); // ae (Binary_to_BCD.v)
+selectCodeEditor("Binary_to_BCD.v", 188, 94); // ae (Binary_to_BCD.v)
+// Elapsed time: 17 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SevenSeg"); // ad (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // k (dialog18)
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 7 seconds
+dismissDialog("Add Sources"); // c (dialog17)
+// Tcl Message: close [ open C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SevenSeg.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SevenSeg.v 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Define Module"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes", "Define Module"); // JButton (OptionPane.button)
+dismissDialog("Define Module"); // n (dialog19)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 41m:01s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 41m:03s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No such file or directory 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No such file or directory ERROR: [Common 17-180] Spawn failed: No such file or directory 
+// Tcl Message: INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 41m:05s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SevenSeg (SevenSeg.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SevenSeg (SevenSeg.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 41m:07s
+selectCodeEditor("SevenSeg.v", 12, 377); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 12, 377, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 12, 377); // ae (SevenSeg.v)
+typeControlKey((HResource) null, "SevenSeg.v", 'v'); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 318, 432); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 320, 410); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 309, 396); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 310, 382); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 309, 355); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 314, 369); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 316, 329); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 313, 312); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 317, 300); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 315, 279); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 305, 257); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 306, 245); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 314, 233); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 333, 169); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 333, 169, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 331, 173); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 331, 173, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 331, 173); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 175, 293); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 185, 227); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 185, 227, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 185, 227); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 172, 250); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 303, 265); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 298, 275); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 449, 297); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 147, 315); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 172, 362); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 165, 488); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 114, 262); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 114, 262, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 114, 262); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 112, 247); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 131, 352); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 185, 388); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 185, 388, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 185, 388); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 192, 369); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 363, 348); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 133, 293); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 133, 293, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 133, 293); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 125, 356); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 125, 356, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 119, 363); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 119, 363, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 119, 363); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 131, 401); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 131, 401, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 131, 401); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 130, 435); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 130, 435, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 130, 435); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 422, 450); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 240, 308); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 240, 308, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 240, 308); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 176, 382); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 176, 382, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 176, 382); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 239, 453); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 187, 361); // ae (SevenSeg.v)
+// Elapsed time: 11 seconds
+selectCodeEditor("SevenSeg.v", 220, 277); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 207, 296); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 212, 316); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 187, 103); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 187, 103, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+// 'f' command handler elapsed time: 25 seconds
+// Elapsed time: 24 seconds
+dismissDialog("Add Sources"); // c (dialog20)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("Top.v", 69, 382); // ae (Top.v)
+selectCodeEditor("Top.v", 77, 383); // ae (Top.v)
+typeControlKey((HResource) null, "Top.v", 'v'); // ae (Top.v)
+selectCodeEditor("Top.v", 78, 463); // ae (Top.v)
+selectCodeEditor("Top.v", 72, 425); // ae (Top.v)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top.v", 163, 453); // ae (Top.v)
+selectCodeEditor("Top.v", 168, 390); // ae (Top.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 15, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 15, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 15, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("SPM.v", 108, 263); // ae (SPM.v)
+typeControlKey((HResource) null, "SPM.v", 'v'); // ae (SPM.v)
+typeControlKey(null, null, 'z');
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v), MyStart_Button : Push_Button_Detector (Push_Button_Detector.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("SPM.v", 708, 175); // ae (SPM.v)
+typeControlKey((HResource) null, "SPM.v", 'v'); // ae (SPM.v)
+selectCodeEditor("SPM.v", 715, 183); // ae (SPM.v)
+selectCodeEditor("SPM.v", 726, 215); // ae (SPM.v)
+selectCodeEditor("SPM.v", 707, 194); // ae (SPM.v)
+selectCodeEditor("SPM.v", 105, 228); // ae (SPM.v)
+// Elapsed time: 13 seconds
+selectCodeEditor("SPM.v", 117, 311); // ae (SPM.v)
+typeControlKey((HResource) null, "SPM.v", 'v'); // ae (SPM.v)
+selectCodeEditor("SPM.v", 115, 230); // ae (SPM.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (Top.v)]", 26, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (Top.v)]", 26, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPM (SPM.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("SPM.v", 1, 195); // ae (SPM.v)
+selectCodeEditor("SPM.v", 3, 195); // ae (SPM.v)
+selectCodeEditor("SPM.v", 2, 200); // ae (SPM.v)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SevenSeg (SevenSeg.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SevenSeg (SevenSeg.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Binary_to_BCD (Binary_to_BCD.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Binary_to_BCD (Binary_to_BCD.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save", "Save Project"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // ac.d (dialog21)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/utils_1/imports/synth_1/CSA.dcp with file C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.runs/synth_1/SPM.dcp 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 46m:04s
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // g (dialog22)
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// Tcl Message: INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No such file or directory ERROR: [Common 17-180] Spawn failed: No such file or directory ERROR: [Common 17-180] Spawn failed: No such file or directory 
+// Tcl Message: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.  
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 46m:08s
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Common 17-180] Spawn failed: No such file or directory", 0); // b (PAResourceAtoD.CmdMsgDialog_MESSAGES)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Common 17-180] Spawn failed: No such file or directory", 0, false, false, false, false, true); // b (PAResourceAtoD.CmdMsgDialog_MESSAGES) - Double Click
+// 'i' command handler elapsed time: 6 seconds
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Launch Run Critical Messages"); // bc (dialog23)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. ]", 2, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. , [Common 17-180] Spawn failed: No error. ]", 4, false, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. , [Common 17-180] Spawn failed: No error. ]", 4, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. , [Common 17-180] Spawn failed: No error. ]", 4, false, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // g (dialog24)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// Tcl Message: [Mon May 19 14:26:18 2025] Launched synth_1... Run output will be captured here: C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 81 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog25)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-439] module 'Seven_Segment_Controller' not found [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SPM.v:29]. ]", 5, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier\SequentialMultiplier.srcs\sources_1\new\SPM.v;-;;-;16;-;line;-;29;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("SPM.v", 127, 183); // ae (SPM.v)
+selectCodeEditor("SPM.v", 127, 183, false, false, false, false, true); // ae (SPM.v) - Double Click
+selectCodeEditor("SPM.v", 161, 177); // ae (SPM.v)
+selectCodeEditor("SPM.v", 161, 177, false, false, false, false, true); // ae (SPM.v) - Double Click
+selectCodeEditor("SPM.v", 133, 178); // ae (SPM.v)
+selectCodeEditor("SPM.v", 133, 178, false, false, false, false, true); // ae (SPM.v) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'SPM' [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SPM.v:23]. ]", 6, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier\SequentialMultiplier.srcs\sources_1\new\SPM.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'SPM' [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SPM.v:23]. ]", 6, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier\SequentialMultiplier.srcs\sources_1\new\SPM.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("SPM.v", 332, 76); // ae (SPM.v)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save", "Save Project"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // ac.d (dialog26)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 48m:08s
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // g (dialog27)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No such file or directory 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon May 19 14:28:10 2025] Launched synth_1... Run output will be captured here: C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.runs/synth_1/runme.log 
+// Tcl Message: ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors.  
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 48m:12s
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Launch Run Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+// 'i' command handler elapsed time: 6 seconds
+dismissDialog("Launch Run Critical Messages"); // bc (dialog28)
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "Cancel", "Run Synthesis"); // JButton (OptionPane.button)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 29 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog29)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'bcd' should not be used in output port connection [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SevenSeg.v:43]. ]", 5, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier\SequentialMultiplier.srcs\sources_1\new\SevenSeg.v;-;;-;16;-;line;-;43;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'SevenSeg' [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SevenSeg.v:23]. ]", 6, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier\SequentialMultiplier.srcs\sources_1\new\SevenSeg.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'SevenSeg' [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SevenSeg.v:23]. ]", 6, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier\SequentialMultiplier.srcs\sources_1\new\SevenSeg.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'SevenSeg' [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SevenSeg.v:23]. ]", 6, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier\SequentialMultiplier.srcs\sources_1\new\SevenSeg.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'bcd' should not be used in output port connection [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.srcs/sources_1/new/SevenSeg.v:43]. ]", 5, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Hassan\Documents\GitHub\SignedSPM\SequentialMultiplier\SequentialMultiplier.srcs\sources_1\new\SevenSeg.v;-;;-;16;-;line;-;43;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("SevenSeg.v", 122, 307); // ae (SevenSeg.v)
+typeControlKey((HResource) null, "SevenSeg.v", 'c'); // ae (SevenSeg.v)
+typeControlKey((HResource) null, "SevenSeg.v", 'c'); // ae (SevenSeg.v)
+// Elapsed time: 74 seconds
+typeControlKey((HResource) null, "SevenSeg.v", 'v'); // ae (SevenSeg.v)
+typeControlKey(null, null, 'z');
+selectCodeEditor("SevenSeg.v", 26, 370); // ae (SevenSeg.v)
+typeControlKey((HResource) null, "SevenSeg.v", 'v'); // ae (SevenSeg.v)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save", "Save Project"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+dismissDialog("Save Project"); // ac.d (dialog30)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 50m:43s
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // g (dialog31)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No such file or directory ERROR: [Common 17-180] Spawn failed: No such file or directory ERROR: [Common 17-180] Spawn failed: No such file or directory ERROR: [Common 17-180] Spawn failed: No such file or directory 
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// Tcl Message: [Mon May 19 14:30:43 2025] Launched synth_1... Run output will be captured here: C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.runs/synth_1/runme.log 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No such file or directory 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 50m:45s
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Launch Run Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+// 'i' command handler elapsed time: 5 seconds
+dismissDialog("Launch Run Critical Messages"); // bc (dialog32)
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "Cancel", "Run Synthesis"); // JButton (OptionPane.button)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Synthesis Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Synthesis Completed"); // W.a (dialog33)
+selectCodeEditor("SevenSeg.v", 508, 406); // ae (SevenSeg.v)
+typeControlKey((HResource) null, "SevenSeg.v", 'c'); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 60, 48); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 57, 40); // ae (SevenSeg.v)
+typeControlKey((HResource) null, "SevenSeg.v", 'c'); // ae (SevenSeg.v)
+typeControlKey((HResource) null, "SevenSeg.v", 'c'); // ae (SevenSeg.v)
+typeControlKey((HResource) null, "SevenSeg.v", 'c'); // ae (SevenSeg.v)
+// Elapsed time: 239 seconds
+selectCodeEditor("SevenSeg.v", 377, 408); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 310, 414); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 313, 395); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 305, 385); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 309, 368); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 310, 343); // ae (SevenSeg.v)
+typeControlKey(null, null, 'z');
+selectCodeEditor("SevenSeg.v", 310, 352); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 313, 327); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 302, 322); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 311, 317); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 309, 317); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 308, 298); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 308, 279); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 306, 265); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 304, 244); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 310, 232); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 304, 216); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 275, 157); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 275, 157, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 275, 157); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 314, 146); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 321, 333); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 260, 178); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 260, 178, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 260, 178); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 176, 39); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 176, 39, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 176, 39); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 349, 88); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 257, 199); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 314, 296); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 517, 327); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 314, 483); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 178, 263); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 178, 263, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 178, 263); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 170, 401); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 170, 401, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 170, 401); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 208, 363); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 135, 281); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 135, 281, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 135, 281); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 126, 320); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 126, 320, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 126, 320); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 102, 351); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 102, 351, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 102, 351); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 164, 473); // ae (SevenSeg.v)
+selectCodeEditor("SevenSeg.v", 164, 473, false, false, false, false, true); // ae (SevenSeg.v) - Double Click
+selectCodeEditor("SevenSeg.v", 164, 473); // ae (SevenSeg.v)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Binary_to_BCD.v", 10); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("Binary_to_BCD.v", 131, 474); // ae (Binary_to_BCD.v)
+typeControlKey((HResource) null, "Binary_to_BCD.v", 'c'); // ae (Binary_to_BCD.v)
+typeControlKey((HResource) null, "Binary_to_BCD.v", 'c'); // ae (Binary_to_BCD.v)
+// Elapsed time: 70 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), multiplier : SPM (SPM.v)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), multiplier : SPM (SPM.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (Top.v)]", 11, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (Top.v)]", 11, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("Top.v", 53, 214); // ae (Top.v)
+selectCodeEditor("Top.v", 83, 304); // ae (Top.v)
+selectCodeEditor("Top.v", 54, 259); // ae (Top.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 58m:54s
+closeMainWindow("SequentialMultiplier - [C:/Users/Hassan/Documents/GitHub/SignedSPM/SequentialMultiplier/SequentialMultiplier.xpr] - Vivado 2024.2"); // G (MainFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXIT

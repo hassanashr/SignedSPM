@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+E:/Eight_bit_SPM/Eight_bit_SPM.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sim_1/new/SPM_Tb.v,1747729412,verilog,,,,SPM_Tb,,,,,,,,
+E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/CSA.v,1747567006,verilog,,E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Counter.v,,CSA,,,,,,,,
+E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Counter.v,1747693083,verilog,,E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/HA.v,,Counter,,,,,,,,
+E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/HA.v,1747575540,verilog,,E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/SPM.v,,HA,,,,,,,,
+E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/SPM.v,1747729289,verilog,,E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/TCMP.v,,SPM,,,,,,,,
+E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/TCMP.v,1747582996,verilog,,E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sim_1/new/SPM_Tb.v,,TCMP,,,,,,,,

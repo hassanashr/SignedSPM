@@ -1,0 +1,332 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue May 20 00:05:27 2025
+# Process ID         : 4192
+# Current directory  : D:/SignedSPM/Test1/Test1.runs/synth_1
+# Command line       : vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file           : D:/SignedSPM/Test1/Test1.runs/synth_1/main.vds
+# Journal file       : D:/SignedSPM/Test1/Test1.runs/synth_1\vivado.jou
+# Running On         : Y_ELMenshawy
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16948 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 18022 MB
+# Available Virtual  : 2869 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/SignedSPM/Test1/Test1.srcs/utils_1/imports/synth_1/BCDtoXS3.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/SignedSPM/Test1/Test1.srcs/utils_1/imports/synth_1/BCDtoXS3.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25956
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1031.129 ; gain = 468.738
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10929] literal value 'b11111110 truncated to fit in 7 bits [C:/Users/youfi/Downloads/7SD.v:32]
+WARNING: [Synth 8-10929] literal value 'b11111111 truncated to fit in 7 bits [C:/Users/youfi/Downloads/7SD.v:34]
+INFO: [Synth 8-11241] undeclared symbol 'flashingClock', assumed default net type 'wire' [C:/Users/youfi/Downloads/SS_Driver.v:28]
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/youfi/Downloads/main.v:18]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/youfi/Downloads/clock_divider.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (0#1) [C:/Users/youfi/Downloads/clock_divider.v:18]
+INFO: [Synth 8-6157] synthesizing module 'pushbutton_detector' [C:/Users/youfi/Downloads/pushbutton_detector.v:18]
+INFO: [Synth 8-6157] synthesizing module 'Debouncer' [C:/Users/youfi/Downloads/Debouncer.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Debouncer' (0#1) [C:/Users/youfi/Downloads/Debouncer.v:18]
+INFO: [Synth 8-6157] synthesizing module 'Synchronizer' [C:/Users/youfi/Downloads/Synchronizer.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'Synchronizer' (0#1) [C:/Users/youfi/Downloads/Synchronizer.v:17]
+INFO: [Synth 8-6157] synthesizing module 'rising_edge_detector' [C:/Users/youfi/Downloads/rising_edge_detector.v:17]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/youfi/Downloads/rising_edge_detector.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'rising_edge_detector' (0#1) [C:/Users/youfi/Downloads/rising_edge_detector.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'pushbutton_detector' (0#1) [C:/Users/youfi/Downloads/pushbutton_detector.v:18]
+INFO: [Synth 8-6157] synthesizing module 'Sign_Calculator' [C:/Users/youfi/Downloads/Sign_Calculator.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_Calculator' (0#1) [C:/Users/youfi/Downloads/Sign_Calculator.v:17]
+INFO: [Synth 8-6157] synthesizing module 'Unsigned_Multiplier' [C:/Users/youfi/Downloads/SM.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'Unsigned_Multiplier' (0#1) [C:/Users/youfi/Downloads/SM.v:17]
+INFO: [Synth 8-6157] synthesizing module 'Binary_to_BCD' [C:/Users/youfi/Downloads/Binary_to_BCD.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Binary_to_BCD' (0#1) [C:/Users/youfi/Downloads/Binary_to_BCD.v:18]
+INFO: [Synth 8-6157] synthesizing module 'Shift_Register' [C:/Users/youfi/Downloads/Shift_Register.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_Register' (0#1) [C:/Users/youfi/Downloads/Shift_Register.v:18]
+WARNING: [Synth 8-689] width (5) of port connection 'D0' does not match port width (4) of module 'Shift_Register' [C:/Users/youfi/Downloads/main.v:45]
+WARNING: [Synth 8-689] width (5) of port connection 'D1' does not match port width (4) of module 'Shift_Register' [C:/Users/youfi/Downloads/main.v:45]
+WARNING: [Synth 8-689] width (5) of port connection 'D2' does not match port width (4) of module 'Shift_Register' [C:/Users/youfi/Downloads/main.v:45]
+WARNING: [Synth 8-689] width (5) of port connection 'D3' does not match port width (4) of module 'Shift_Register' [C:/Users/youfi/Downloads/main.v:45]
+WARNING: [Synth 8-689] width (5) of port connection 'D4' does not match port width (4) of module 'Shift_Register' [C:/Users/youfi/Downloads/main.v:45]
+WARNING: [Synth 8-689] width (5) of port connection 'S0' does not match port width (4) of module 'Shift_Register' [C:/Users/youfi/Downloads/main.v:45]
+WARNING: [Synth 8-689] width (5) of port connection 'S1' does not match port width (4) of module 'Shift_Register' [C:/Users/youfi/Downloads/main.v:45]
+WARNING: [Synth 8-689] width (5) of port connection 'S2' does not match port width (4) of module 'Shift_Register' [C:/Users/youfi/Downloads/main.v:45]
+INFO: [Synth 8-6157] synthesizing module 'SS_Driver' [C:/Users/youfi/Downloads/SS_Driver.v:18]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [C:/Users/youfi/Downloads/clock_divider.v:18]
+	Parameter n bound to: 250000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (0#1) [C:/Users/youfi/Downloads/clock_divider.v:18]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [C:/Users/youfi/Downloads/Counter.v:18]
+	Parameter x bound to: 2 - type: integer 
+	Parameter n bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (0#1) [C:/Users/youfi/Downloads/Counter.v:18]
+INFO: [Synth 8-6157] synthesizing module 'SD' [C:/Users/youfi/Downloads/7SD.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'SD' (0#1) [C:/Users/youfi/Downloads/7SD.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'SS_Driver' (0#1) [C:/Users/youfi/Downloads/SS_Driver.v:18]
+WARNING: [Synth 8-689] width (5) of port connection 'BCD0' does not match port width (4) of module 'SS_Driver' [C:/Users/youfi/Downloads/main.v:47]
+WARNING: [Synth 8-689] width (5) of port connection 'BCD1' does not match port width (4) of module 'SS_Driver' [C:/Users/youfi/Downloads/main.v:47]
+WARNING: [Synth 8-689] width (5) of port connection 'BCD2' does not match port width (4) of module 'SS_Driver' [C:/Users/youfi/Downloads/main.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [C:/Users/youfi/Downloads/main.v:18]
+WARNING: [Synth 8-7137] Register resultant_reg in module Unsigned_Multiplier has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/youfi/Downloads/SM.v:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1141.293 ; gain = 578.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1141.293 ; gain = 578.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1141.293 ; gain = 578.902
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1141.293 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/youfi/Downloads/main_constraints.xdc]
+Finished Parsing XDC File [C:/Users/youfi/Downloads/main_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/youfi/Downloads/main_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1231.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1231.734 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1231.734 ; gain = 669.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1231.734 ; gain = 669.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1231.734 ; gain = 669.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rising_edge_detector'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                       A |                              001 |                               00
+                       B |                              010 |                               01
+                       C |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'rising_edge_detector'
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [C:/Users/youfi/Downloads/SM.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'S0_reg' [C:/Users/youfi/Downloads/Shift_Register.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'S1_reg' [C:/Users/youfi/Downloads/Shift_Register.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'S2_reg' [C:/Users/youfi/Downloads/Shift_Register.v:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1231.734 ; gain = 669.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 43    
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 40    
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1231.734 ; gain = 669.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1340.965 ; gain = 778.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1340.965 ; gain = 778.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (Shifter/S0_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S0_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S0_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S0_reg[0]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S1_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S1_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S1_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S1_reg[0]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S2_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S2_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S2_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Shifter/S2_reg[0]) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1377.738 ; gain = 815.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1563.520 ; gain = 1001.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1563.520 ; gain = 1001.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1563.520 ; gain = 1001.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1563.520 ; gain = 1001.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1563.520 ; gain = 1001.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1563.520 ; gain = 1001.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     3|
+|4     |LUT2   |    34|
+|5     |LUT3   |    36|
+|6     |LUT4   |    46|
+|7     |LUT5   |    96|
+|8     |LUT6   |    75|
+|9     |FDCE   |   131|
+|10    |FDPE   |     3|
+|11    |FDRE   |    33|
+|12    |LDC    |     1|
+|13    |IBUF   |    21|
+|14    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1563.520 ; gain = 1001.129
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1563.520 ; gain = 910.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1563.520 ; gain = 1001.129
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1572.648 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1576.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instance 
+
+Synth Design complete | Checksum: 788655
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.355 ; gain = 1204.961
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1576.355 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/SignedSPM/Test1/Test1.runs/synth_1/main.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 20 00:06:22 2025...

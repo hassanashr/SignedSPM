@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/CSA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSA
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'count' is not allowed [E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Counter.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/HA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/SPM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/TCMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TCMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sim_1/new/SPM_Tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPM_Tb

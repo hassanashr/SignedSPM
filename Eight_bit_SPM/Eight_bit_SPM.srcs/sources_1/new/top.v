@@ -49,6 +49,6 @@ BinarytoBCD Converter(.Binary(Unsigned_Product), .d0(D0), .d1(D1), .d2(D2), .d3(
 
 Digit_Selector Shifter(.D0(D0), .D1(D1), .D2(D2), .D3(D3), .D4(D4), .clk(clk_slow), .R(R), .w1(right_out), .w2(left_out), .S0(S0), .S1(S1), .S2(S2));
 
-DigitDisplayDriver Display(.sign(sign), .clk(clk), .rst(R), .BCD0(S0), .BCD1(S1), .BCD2(S2), .segments(segments), .en(enable));
+DigitDisplayDriver Display(.sign(sign), .clk(clk_slow), .rst(R), .BCD0(S0), .BCD1(S1), .BCD2(S2), .segments(segments), .en(enable));
 
 endmodule

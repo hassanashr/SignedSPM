@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/Eight_bit_SPM/Eight_bit_SPM.runs/synth_1'
+HD_PWD='D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Sign_Producer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sign_Producer.tcl
+EAStep vivado -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl

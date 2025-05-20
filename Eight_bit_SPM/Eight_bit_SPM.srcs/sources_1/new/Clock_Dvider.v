@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Clock_Dvider #(parameter n = 50_000_000)(input clk, rst, output reg clk_out);
+module Clock_Dvider #(parameter n = 250_000)(input clk, rst, output reg clk_out);
 
 reg [31:0] count;
 

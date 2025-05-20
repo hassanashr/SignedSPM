@@ -25,8 +25,8 @@ wire Clk_Out;
 wire [1:0] toggleEnable;
 reg[3:0] in1;
 
-Clock_Dvider #(.n(250_000)) toggleClock(.clk(clk), .rst(rst), .clk_out(Clk_Out));
-Binary_Counter #(.x(2), .n(4)) toggler(.clk(Clk_Out), .reset(rst), .en(1'b1), .count(toggleEnable));
+//Clock_Dvider #(.n(250_000)) toggleClock(.clk(clk), .rst(rst), .clk_out(Clk_Out));
+Binary_Counter #(.x(2), .n(4)) toggler(.clk(clk), .reset(rst), .en(1'b1), .count(toggleEnable));
 Seven_Segment_Display segmentor(.toggle(toggleEnable), .in(in1), .segments(segments), .anode_active(en));
 
 always @(*) begin

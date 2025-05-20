@@ -59,8 +59,8 @@ module SPM_Tb();
 
         // Load values and start multiplication
         #10;
-        X = 8'd255;  // Example: -13 (signed)
-        Y = 8'd255;    // Example: 3 (signed)
+        X = 8'd128;  // Example: -13 (signed)
+        Y = 8'd128;    // Example: 3 (signed)
         Go = 1;
 
         #10;

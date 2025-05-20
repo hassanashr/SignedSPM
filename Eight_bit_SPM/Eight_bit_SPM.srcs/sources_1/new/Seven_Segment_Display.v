@@ -34,9 +34,9 @@ always @ (in) begin
         7: segments = 7'b0001111;
         8: segments = 7'b0000000;
         9: segments = 7'b0000100;
-        10: segments = 7'b11111110;
+        10: segments = 7'b1111110;
         
-        default: segments = 7'b11111111;
+        default: segments = 7'b1111111;
     endcase
 end
 always @ * begin

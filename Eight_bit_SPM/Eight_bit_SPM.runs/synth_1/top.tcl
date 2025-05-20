@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "E:/Eight_bit_SPM/Eight_bit_SPM.runs/synth_1/Sign_Producer.tcl"
+  variable script "D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.notrace 1
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Common 17-41} -limit 10000000
@@ -65,34 +66,34 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir E:/Eight_bit_SPM/Eight_bit_SPM.cache/wt [current_project]
-set_property parent.project_path E:/Eight_bit_SPM/Eight_bit_SPM.xpr [current_project]
+set_property webtalk.parent_dir D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.cache/wt [current_project]
+set_property parent.project_path D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/youfi/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo e:/Eight_bit_SPM/Eight_bit_SPM.cache/ip [current_project]
+set_property ip_output_repo d:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/top.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Binary_Counter.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/BinarytoBCD.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/CSA.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Clock_Dvider.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Counter.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/DigitDisplayDriver.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Digit_Selector.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/HA.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Meelay_RisingEdge_Detector.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/PushButton.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/SPM.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Seven_Segment_Display.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Sign_Producer.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/TCMP.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/debouncer.v
-  E:/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/synchronizer.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/SPM.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/top.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Binary_Counter.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/BinarytoBCD.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/CSA.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Clock_Dvider.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Counter.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/DigitDisplayDriver.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Digit_Selector.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/HA.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Meelay_RisingEdge_Detector.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/PushButton.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Seven_Segment_Display.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/Sign_Producer.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/TCMP.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/debouncer.v
+  D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/sources_1/new/synchronizer.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -103,16 +104,16 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/Eight_bit_SPM/Eight_bit_SPM.srcs/constrs_1/new/C.xdc
-set_property used_in_implementation false [get_files E:/Eight_bit_SPM/Eight_bit_SPM.srcs/constrs_1/new/C.xdc]
+read_xdc D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/constrs_1/new/C.xdc
+set_property used_in_implementation false [get_files D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/constrs_1/new/C.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental E:/Eight_bit_SPM/Eight_bit_SPM.srcs/utils_1/imports/synth_1/SPM.dcp
+read_checkpoint -auto_incremental -incremental D:/SignedSPM/Eight_bit_SPM/Eight_bit_SPM.srcs/utils_1/imports/synth_1/SPM.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top Sign_Producer -part xc7a35tcpg236-1
+synth_design -top top -part xc7a35tcpg236-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -122,10 +123,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef Sign_Producer.dcp
+write_checkpoint -force -noxdef top.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-generate_parallel_reports -reports { "report_utilization -file Sign_Producer_utilization_synth.rpt -pb Sign_Producer_utilization_synth.pb"  } 
+generate_parallel_reports -reports { "report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb"  } 
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

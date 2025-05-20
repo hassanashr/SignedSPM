@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Tue May 20 21:46:03 2025
+| Date             : Wed May 21 00:36:54 2025
 | Host             : Y_ELMenshawy running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 30.477 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 30.450 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 29.991                           |
+| Dynamic (W)              | 29.964                           |
 | Device Static (W)        | 0.486                            |
 | Effective TJA (C/W)      | 5.0                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.483 |      392 |       --- |             --- |
-|   LUT as Logic |     0.435 |      192 |     20800 |            0.92 |
+| Slice Logic    |     0.482 |      392 |       --- |             --- |
+|   LUT as Logic |     0.434 |      192 |     20800 |            0.92 |
 |   Register     |     0.023 |      129 |     41600 |            0.31 |
 |   CARRY4       |     0.019 |       12 |      8150 |            0.15 |
 |   BUFG         |     0.006 |        2 |        32 |            6.25 |
 |   Others       |     0.000 |       26 |       --- |             --- |
-| Signals        |     0.541 |      319 |       --- |             --- |
+| Signals        |     0.515 |      319 |       --- |             --- |
 | I/O            |    28.967 |       33 |       106 |           31.13 |
 | Static Power   |     0.486 |          |           |                 |
-| Total          |    30.477 |          |           |                 |
+| Total          |    30.450 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.445 |       1.104 |      0.341 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.418 |       1.077 |      0.341 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     1.112 |       1.059 |      0.053 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     8.177 |       8.176 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -138,21 +138,20 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| top            |    29.991 |
+| top            |    29.964 |
 |   BTNC         |     0.006 |
 |     posedgedet |     0.006 |
-|   Display      |     0.171 |
-|     toggler    |     0.171 |
-|   MySPM        |     0.124 |
+|   Display      |     0.173 |
+|     toggler    |     0.173 |
+|   MySPM        |     0.132 |
 |     CSA3       |     0.002 |
 |     CSA4       |     0.002 |
 |     CSA5       |     0.002 |
-|     P_Counter  |     0.111 |
+|     P_Counter  |     0.119 |
 |     TCMP1      |     0.003 |
-|     Y_Counter  |     0.001 |
-|   Shifter      |     0.023 |
-|   clk_out      |     0.299 |
-|   sign_calc    |     0.332 |
+|   Shifter      |     0.027 |
+|   clk_out      |     0.302 |
+|   sign_calc    |     0.286 |
 +----------------+-----------+
 
 

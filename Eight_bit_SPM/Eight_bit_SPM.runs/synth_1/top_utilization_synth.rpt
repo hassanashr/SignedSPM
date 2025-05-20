@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue May 20 21:44:43 2025
+| Date         : Wed May 21 00:35:43 2025
 | Host         : Y_ELMenshawy running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -156,10 +156,10 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | LUT6     |   72 |                 LUT |
 | LUT5     |   61 |                 LUT |
 | LUT4     |   52 |                 LUT |
-| LUT2     |   22 |                 LUT |
+| LUT2     |   23 |                 LUT |
 | IBUF     |   21 |                  IO |
 | FDRE     |   17 |        Flop & Latch |
-| LUT3     |   14 |                 LUT |
+| LUT3     |   13 |                 LUT |
 | OBUF     |   12 |                  IO |
 | CARRY4   |   12 |          CarryLogic |
 | LUT1     |    3 |                 LUT |

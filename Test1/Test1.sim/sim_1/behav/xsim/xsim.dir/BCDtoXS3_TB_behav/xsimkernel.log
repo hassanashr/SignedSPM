@@ -1,7 +1,0 @@
-Running: xsim.dir/BCDtoXS3_TB_behav/xsimk.exe -simmode gui -wdb BCDtoXS3_TB_behav.wdb -simrunnum 0 -socket 65456
-Design successfully loaded
-Design Loading Memory Usage: 29656 KB (Peak: 29656 KB)
-Design Loading CPU Usage: 671 ms
-Simulation completed
-Simulation Memory Usage: 30472 KB (Peak: 30472 KB)
-Simulation CPU Usage: 718 ms

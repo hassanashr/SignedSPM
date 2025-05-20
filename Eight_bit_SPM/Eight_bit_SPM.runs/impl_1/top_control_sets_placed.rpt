@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue May 20 21:45:43 2025
+| Date         : Wed May 21 00:36:25 2025
 | Host         : Y_ELMenshawy running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -59,7 +59,7 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              17 |            5 |
-| No           | No                    | Yes                    |              83 |           31 |
+| No           | No                    | Yes                    |              83 |           32 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |              29 |            8 |
@@ -79,7 +79,7 @@ Table of Contents
 |  clk_slow_BUFG | MySPM/P_Counter/E[0]                      | R_IBUF           |                4 |             16 |         4.00 |
 |  clk_slow_BUFG |                                           |                  |                5 |             17 |         3.40 |
 |  clk_IBUF_BUFG |                                           | R_IBUF           |               13 |             33 |         2.54 |
-|  clk_slow_BUFG |                                           | R_IBUF           |               18 |             50 |         2.78 |
+|  clk_slow_BUFG |                                           | R_IBUF           |               19 |             50 |         2.63 |
 +----------------+-------------------------------------------+------------------+------------------+----------------+--------------+
 
 

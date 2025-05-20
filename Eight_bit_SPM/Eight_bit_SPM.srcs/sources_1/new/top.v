@@ -41,7 +41,7 @@ PushButton BTNR (.clk(clk_slow), .rst(R), .x(right), .Z(right_out));
 
 SPM MySPM(.X(X), .Y(Y), .R(R),.clk(clk_slow),.Go(Go_out),  .done(done), .P_reg(Signed_Product));
 
-Sign_Producer sign_calc(.Signed_Product(Signed_Product), .clk(clk_slow) ,.load(Go_out),.sign(sign),.Abs_Result(Unsigned_Product));
+Sign_Producer sign_calc(.Signed_Product(Signed_Product), .clk(clk_slow) ,.load(done),.sign(sign),.Abs_Result(Unsigned_Product));
 
 //assign Unsigned_Product = (Signed_Product[15])?(~Signed_Product +1):(Signed_Product);
 BinarytoBCD Converter(.Binary(Unsigned_Product), .d0(D0), .d1(D1), .d2(D2), .d3(D3), .d4(D4));
@@ -50,5 +50,4 @@ BinarytoBCD Converter(.Binary(Unsigned_Product), .d0(D0), .d1(D1), .d2(D2), .d3(
 Digit_Selector Shifter(.D0(D0), .D1(D1), .D2(D2), .D3(D3), .D4(D4), .clk(clk_slow), .R(R), .w1(right_out), .w2(left_out), .S0(S0), .S1(S1), .S2(S2));
 
 DigitDisplayDriver Display(.sign(sign), .clk(clk_slow), .rst(R), .BCD0(S0), .BCD1(S1), .BCD2(S2), .segments(segments), .en(enable));
-
 endmodule

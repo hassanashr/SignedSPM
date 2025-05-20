@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module PushButton(input clk,rst,X,output Z);
+module PushButton(input clk,rst,x,output Z);
 wire t1, t2;
-Debouncer Deb(.clk(clk), .rst(rst), .in(w), .out(t1));
-Synchronizer Sync(.clk(clk), .rst(rst), .sig(t1), .sig1(t2)); 
-Meelay_RisingEdge_Detector posedgedet(.clock(clk), .reset(rst), .w(t2), .z(z));
+debouncer Deb(.clk(clk), .rst(rst), .in(x), .out(t1));
+synchronizer Sync(.clk(clk), .R(rst), .sig(t1), .sig1(t2)); 
+Meelay_RisingEdge_Detector posedgedet(.clock(clk), .reset(rst), .w(t2), .z(Z));
 endmodule

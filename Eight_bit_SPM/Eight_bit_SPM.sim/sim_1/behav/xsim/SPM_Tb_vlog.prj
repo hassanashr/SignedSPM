@@ -1,10 +1,22 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../Eight_bit_SPM.srcs/sources_1/new/CSA.v" \
-"../../../../Eight_bit_SPM.srcs/sources_1/new/Counter.v" \
-"../../../../Eight_bit_SPM.srcs/sources_1/new/HA.v" \
 "../../../../Eight_bit_SPM.srcs/sources_1/new/SPM.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/top.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/Binary_Counter.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/BinarytoBCD.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/CSA.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/Clock_Dvider.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/Counter.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/DigitDisplayDriver.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/Digit_Selector.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/HA.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/Meelay_RisingEdge_Detector.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/PushButton.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/Seven_Segment_Display.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/Sign_Producer.v" \
 "../../../../Eight_bit_SPM.srcs/sources_1/new/TCMP.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/debouncer.v" \
+"../../../../Eight_bit_SPM.srcs/sources_1/new/synchronizer.v" \
 "../../../../Eight_bit_SPM.srcs/sim_1/new/SPM_Tb.v" \
 
 # compile glbl module

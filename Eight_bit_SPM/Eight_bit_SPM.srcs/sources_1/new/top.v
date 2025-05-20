@@ -32,9 +32,9 @@ wire Go_out;
 
 Clock_Dvider clk_out(.clk(clk), .rst(R), .clk_out(clk_slow));
 
-PushButton BTNC (.clk(clk_slow), .rst(R), .X(Go), .Z(Go_out));
-PushButton BTNL (.clk(clk_slow), .rst(R), .X(left), .Z(left_out));
-PushButton BTNR (.clk(clk_slow), .rst(R), .X(right), .Z(right_out));
+PushButton BTNC (.clk(clk_slow), .rst(R), .x(Go), .Z(Go_out));
+PushButton BTNL (.clk(clk_slow), .rst(R), .x(left), .Z(left_out));
+PushButton BTNR (.clk(clk_slow), .rst(R), .x(right), .Z(right_out));
 
 //assign Go_out= Go;
 

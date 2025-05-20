@@ -20,8 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Binary_Counter#(parameter x = 3, n = 6) (input clk, reset,input en, output [x-1:0] count);
-    reg [x-1:0] count;
+module Binary_Counter#(parameter x = 3, n = 6) (input clk, reset,input en, output reg[x-1:0] count);
     
     always @(posedge clk, posedge reset) begin
         if (reset == 1)

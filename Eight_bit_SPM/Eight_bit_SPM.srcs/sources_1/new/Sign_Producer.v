@@ -20,11 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Sign_Producer(input [15:0] Signed_Product, input clk, load,output reg sign ,output reg [15:0]Abs_Result
-
+module Sign_Producer(input [15:0] Signed_Product, input clk, load,output reg sign ,output reg [15:0]Abs_Result);
 //output reg [7:0] num1_abs, num2_abs
-);
-
 always @ (posedge clk) begin
     if(load) sign <= Signed_Product[15];
     else sign = sign;

@@ -36,8 +36,8 @@ Developed as a course project for **CSCE2301/230 – Digital Design I – Spring
 ## How to Use
 
 1. **Set Inputs** using the Basys 3 toggle switches:
-   - `SW15–SW8`: Multiplicand (signed 2’s complement)
-   - `SW7–SW0`: Multiplier (signed 2’s complement)
+   - `SW15–SW8`: Multiplier (signed 2’s complement)
+   - `SW7–SW0`: Multiplicand (signed 2’s complement)
 
 2. **Start Multiplication** by pressing `BTNC`.
 
